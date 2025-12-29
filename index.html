@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet 16 Narissah 💖</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 30px 25px;
+  max-width: 420px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  animation: fadeIn 1.5s ease;
+}
+
+.photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255,255,255,0.6);
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+
+h2 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.heart {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  animation: pulse 1.5s infinite;
+}
+
+button {
+  margin-top: 22px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: #fff;
+  color: #ff5f8f;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC AUTOPLAY -->
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <div class="card">
+
+    <!-- PHOTO -->
+    <img src="narissah.jpg" alt="Narissah" class="photo">
+
+    <h1>🎂 Sweet 16 🎂</h1>
+    <h2>Happy Birthday, Narissah 💕</h2>
+
+    <p>
+      happy sweet sixteen cintaaaa 🤍  
+      officially 16 and still cute, still amazing,  
+      and still someone who makes me happy.
+    </p>
+
+    <div class="heart">💗</div>
+
+    <p id="msg" class="hidden">
+      even tho we hv known each other belum cukup lama,  
+      and we've never met.  
+      our distance 🇲🇾 far enough 🇮🇩  
+      but somehow u selalu feel close to ma heart 🫶  
+
+      thank you for being you and yourself,  
+      for your random chats,  
+      for being annoying sometimes (a bit 😆  
+      but still makes me smile),  
+      and for existing in my life.  
+
+      semoga in this 16th birthday,  
+      u makin happy, makin strong,  
+      makin cute and pretty (which you already are).  
+
+      one day, I hope distance won’t be the problem anymore  
+      sayanggg cintaaa 🩷🌍💌  
+
+      maybe we'll meet as soon as possible,  
+      wait for me my yoyooooo  
+      ❤️🧡💛💚💙💜🤎🖤🩵🩶🩷🤍  
+
+      祝我亲爱的生日快乐 🤍
+    </p>
+
+    <button onclick="showMsg()">klik pelan-pelan ya 😳</button>
+
+    <footer>
+      from someone in 🇮🇩 who truly love 🩵
+    </footer>
+
+  </div>
+</div>
+
+<script>
+function showMsg() {
+  document.getElementById("msg").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
